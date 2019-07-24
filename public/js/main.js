@@ -18,4 +18,4 @@ var greetHTML = templates['greeting']({
     message: person.hello()
 });
 // console.log();
-document.write(greetHTML);
+// document.write(greetHTML);

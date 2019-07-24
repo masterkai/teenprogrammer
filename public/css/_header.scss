@@ -1,0 +1,15 @@
+header {
+  .KV {
+    @include breakpoint($ipad) {
+      display: none;
+    }
+
+    &__m {
+      display: none;
+      @include breakpoint($ipad){
+        display: block;
+
+      }
+    }
+  }
+}
