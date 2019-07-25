@@ -1,0 +1,140 @@
+.course-video {
+  position: relative;
+  margin-bottom: 50px;
+  @include breakpoint(max-width 600px){
+    margin-bottom: 10px;
+  }
+  .videos {
+    //display: flex;
+    //justify-content: center;
+
+    .video {
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+
+      @include breakpoint($ai-course-table-change){
+        margin: 0 40px 20px;
+      }
+      .video-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-size: cover;
+        background-color: #404040;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 200px;
+        width: auto;
+        color: #fff;
+        .fa-youtube {
+          opacity: .5;
+        }
+        &:hover {
+          .fa-youtube {
+            opacity: 1;
+          }
+        }
+
+      }
+      .video-content {
+        padding: 20px;
+        h2 {
+          font-weight: 600;
+          font-size: 1.275rem;
+          padding-bottom: 20px;
+          line-height: 1.2;
+          @include breakpoint(max-width 600px){
+            font-size: 1.1rem;
+          }
+        }
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 24px;     /* fallback */
+          max-height: 96px;      /* fallback */
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4; /* number of lines to show */
+        }
+        a {
+          display: block;
+          text-align: right;
+          padding: 5px 10px;
+          //background-color: $btnYellow;
+          margin: 10px 0;
+        }
+      }
+
+    }
+    .slick-list {
+      border-radius: 5px;
+    }
+    .slick-dots {
+      li {
+        button:before {
+          font-size: 18px;
+          color: $secondBlue;
+        }
+      }
+    }
+  }
+  .prev-v {
+    position: absolute;
+    top:50%;
+    left:10%;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    width: 40px;
+    background: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/back.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: .5;
+    transition: opacity .1s ease-out;
+    @include breakpoint(max-width 1600px){
+      left:5%;
+    }
+    @include breakpoint(max-width 1400px){
+      left:2%;
+    }
+    @include breakpoint($ai-course-table-change){
+      left:0%;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .next-v {
+    position: absolute;
+    top:50%;
+    right: 10%;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    width: 40px;
+    background: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/next.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: .5;
+    transition: opacity .1s ease-out;
+    @include breakpoint(max-width 1600px){
+      right: 5%;
+    }
+    @include breakpoint(max-width 1400px){
+      right: 2%;
+    }
+    @include breakpoint($ai-course-table-change){
+      right: 0%;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

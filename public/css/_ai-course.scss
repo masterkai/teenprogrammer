@@ -1,0 +1,253 @@
+
+.ai-course {
+  position: relative;
+  padding-bottom: 50px;
+  background-color: #fff;
+  &--table {
+    @include breakpoint($ipad){
+      padding: 30px;
+    }
+  }
+  &--bgGray {
+    background-color: $bodyGray;
+    padding-top: 70px;
+    @include breakpoint($ipad){
+      padding-top: 30px;
+    }
+  }
+  &:first-child {
+    @include breakpoint($ipad){
+      padding-bottom: 0;
+    }
+  }
+  &:last-child {
+    @include breakpoint($ipad){
+      margin-top: -30px;
+    }
+  }
+  .section-title {
+    line-height: 1;
+    span {
+      font-size: 1.25rem;
+      letter-spacing: 5px;
+      font-weight: 500;
+
+    }
+  }
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      height: fit-content;
+      flex-direction: column;
+    }
+  }
+  @include breakpoint(max-width 600px){
+    padding-bottom: 10px;
+  }
+  &-intro {
+    cursor: pointer;
+  }
+
+  .ai-courses {
+    border-radius: 5px;
+
+    &--solo {
+      @include breakpoint($ipad){
+        display: none;
+      }
+    }
+
+    .slick-list {
+      border-radius: 5px;
+      box-shadow: 2px 2px 15px rgba(0,0,0,0.15);
+    }
+    .slick-dots {
+      li {
+        button:before {
+          font-size: 18px;
+          color: $secondBlue;
+        }
+      }
+    }
+    @include breakpoint($ipad){
+      display: none;
+    }
+
+    .table-condensed {
+      .title {
+        background-color: $firstBlue;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.375rem;
+      }
+    }
+  }
+
+  .ai-courses-mobile {
+    .table-condensed {
+      .table {
+        box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+        border-radius: 5px;
+      }
+    }
+    margin: 30px;
+    thead {
+      th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    display: none;
+    @include breakpoint($ipad){
+      display: block;
+    }
+    tbody {
+      tr {
+        td {
+          @include breakpoint($ipad){
+            font-size: 1.2rem!important;
+          }
+        }
+        ul {
+          font-size: 16px!important;
+          padding: 10px 30px;
+          text-align: left;
+          list-style: disc !important;
+
+          li {
+
+          }
+        }
+        &:nth-child(even){
+          display: none;
+        }
+      }
+    }
+  }
+  .table-condensed {
+
+    .table {
+      border: 0;
+      thead {
+        tr {
+          color: #fff;
+          th {
+            text-align: center;
+          }
+          &:nth-child(odd) {
+            background-color: $firstBlue;
+            font-size: 1.425rem;
+            font-weight: 700;
+          }
+          &:nth-child(even) {
+            background-color: $secondBlue;
+            font-size: 1.375rem;
+            font-weight: 500;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:nth-child(odd){
+            background-color: #D3EBFF;
+          }
+          &:nth-child(even){
+            background-color: #fff;
+          }
+          td {
+            ul {
+              list-style: disc;
+              li {
+                &:last-child {
+                  list-style: circle;
+                }
+              }
+            }
+            &:nth-child(odd){
+              text-align: center;
+              vertical-align: middle;
+              font-size: 1.35rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .prev {
+    position: absolute;
+    top:50%;
+    left:10%;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    width: 40px;
+    background: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/back.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: .5;
+    transition: opacity .1s ease-out;
+    @include breakpoint(max-width 1600px){
+      left:5%;
+    }
+    @include breakpoint(max-width 1400px){
+      left:2%;
+    }
+    @include breakpoint($ipad){
+      left:0%;
+      display: none;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .next {
+    position: absolute;
+    top:50%;
+    right: 10%;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    width: 40px;
+    background: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/next.svg) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: .5;
+    transition: opacity .1s ease-out;
+    @include breakpoint(max-width 1600px){
+      right: 5%;
+    }
+    @include breakpoint(max-width 1400px){
+      right: 2%;
+    }
+    @include breakpoint($ipad){
+      right: 0%;
+      display: none;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #fff;
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #fff;
+}

@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" style='font-family: "Microsoft YaHei","Noto Sans TC", sans-serif;'>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ES6</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
+    <META NAME="Title" CONTENT="青少年程式營">
+    <META NAME="Description" CONTENT= "新課綱已啟動，以素養為課程核心，並導入程式課於中小學教程，而大學推薦入學中又採計APCS成績，在在顯示程式設計對現在青少年的重要性。">
+    <META NAME="keywords" CONTENT ="APCS、程式設計 程式開發、Python、Java、108新課綱、科技 素養" >
+    <title>青少年程式營</title>
 
     <!--=========================== CSS ===========================-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/css/slick.css">
+    <link rel="stylesheet" href="build/css/slick-theme.css">
+    <link rel="stylesheet" href="build/css/venobox.css">
     <link rel="stylesheet" href="build/css/vendor.min.css">
+    <link rel="stylesheet" href="build/css/YTPlayer.css">
     <link rel="stylesheet" href="build/css/styles.css">
 
     <!--=========================== JS ===========================-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.1.13/jquery.mb.YTPlayer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
     <script type="text/javascript" src="build/js/data-watermark.js"></script>
+    <!--load everything-->
+    <script defer defer src="build/js/fontawesome-all.min.js"></script>
 
 
     <!--[if lt IE 9]>
@@ -40,20 +55,968 @@
     <script type="text/javascript" src="build/js/wow.min.js"></script>
     <script type="text/javascript">new WOW().init();</script>
 
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i) {
+            w[l]=w[l]||[]; w[l].push({
+                'gtm.start':
+                    new Date().getTime(),event: 'gtm.js'
+            }); var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'? '&l='+l:''; j.async=true; j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TPQ8RC');
+    </script>
+    <!-- End Google Tag Manager -->
+
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPQ8RC"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ==========================================網頁的天========================================== -->
+<iframe style="z-index:9999;overflow:visible;height:280px;width:100%;margin-bottom:-219px;border:0 none; position: relative;" src="/activity/top-2016/Default.aspx">
+</iframe>
 <header>
-    <img src="build/images/KV_1920x768.jpg" alt="" class="KV img-responsive">
-    <img src="build/images/KV_768x960.jpg" alt="" class="KV__m img-responsive">
+    <div class="container">
+        <div class="row">
+            <div class="mainCopy">
+                <img src="build/images/mainCopy.png" alt="" class="wow bounceInDown img-responsive">
+                <div class="courseBtn wow bounceInUp">
+                    <a class="btn btn-go" href="#faceRecognition">APCS能力檢定</a>
+                    <a class="btn btn-go" href="#videoRecognition">青少年Python</a>
+                    <a class="btn btn-go__mobile" href="#faceRecognition">APCS能力檢定</a>
+                    <a class="btn btn-go__mobile" href="#videoRecognition">青少年Python</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
+<section class="ai-course" id="course">
+    <div class="container">
+        <div class="row">
+            <h1 class="section-title">
+                科技素養養成班系列課程<br>
+                <span>培養查找與著手解決問題的能力</span>
+                <div class="bar"></div>
+            </h1>
+            <div class="ai-courses">
+                <div class="table-condensed">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th colspan="3" class="">APCS能力檢定</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>數學概論引導</td>
+                            <td>
+                                <ul>
+                                    <li>數學觀念指引</li>
+                                    <li>高一上_第二章多項式函數</li>
+                                    <li>高一下_數列與級數</li>
+                                    <li>高二下_矩陣</li>
+                                </ul>
+                            </td>
+                            <td>6hrs</td>
+                        </tr>
+                        <tr>
+                            <td>程式基礎概論</td>
+                            <td>
+                                <ul>
+                                    <li>準備 Java 開發環境與 Java Doc；開發、執行 Java 程式</li>
+                                    <li>建立類別、方法、變數、名稱規則、註解</li>
+                                    <li>NetBeans IDE 的安裝與使用說明</li>
+                                    <li>運算子、資料傳遞（途徑）與轉型（基本型別）</li>
+                                    <li>參考型別與資料傳遞方式</li>
+                                    <li>分支流程控制及邏輯運算子</li>
+                                </ul>
+                            </td>
+                            <td>14hrs</td>
+                        </tr>
+                        <tr>
+                            <td>JAVA基礎程式</td>
+                            <td>
+                                <ul>
+                                    <li>新手入門-程式語言基本觀念、程式開發工具安裝</li>
+                                    <li>資料型態、運算元、位元運算(bitwise operation)</li>
+                                    <li>程式流程控制(if...else, for, while…)</li>
+                                    <li>函式與遞迴函式、陣列</li>
+                                    <li>變數範圍、字元與字串處理</li>
+                                </ul>
+                            </td>
+                            <td>36hrs</td>
+                        </tr>
+                        <tr>
+                            <td>APCS檢測認證</td>
+                            <td>
+                                <ul>
+                                    <li>Advanced Nest for while Loop_進階迴圈程式</li>
+                                    <li>Collection and Generics_物件集合泛型</li>
+                                    <li>Recursion_遞迴程式設計</li>
+                                    <li>Stack Queue Linked List _堆疊佇列資料結構</li>
+                                    <li>Tree_樹狀圖</li>
+                                    <li>Sorting Searching_排序搜尋</li>
+                                </ul>
+                            </td>
+                            <td>6hrs</td>
+                        </tr>
+                        <tr>
+                            <td>數學引導啟發</td>
+                            <td>
+                                <ul>
+                                    <li>解題前的數學引導提醒</li>
+                                    <li>高一上_第二章多項式函數</li>
+                                    <li>高一下_數列與級數</li>
+                                    <li>高二下_矩陣</li>
+                                </ul>
+                            </td>
+                            <td>6hrs</td>
+                        </tr>
+                        <tr>
+                            <td>考前衝刺計畫</td>
+                            <td>
+                                <ul>
+                                    <li>程式設計實作</li>
+                                    <li>Programming Concepts</li>
+                                    <li>Data types, constant, variable, Global, Local</li>
+                                    <li>APCS 觀念題精選詳解</li>
+                                    <li>APCS 實作體精選詳解</li>
+                                </ul>
+                            </td>
+                            <td>18hrs</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
 
-<script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <div class="table-condensed">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th colspan="3" class="">青少年Python</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>程式邏輯思維概念</td>
+                            <td>
+                                <ul>
+                                    <li>運算思維與問題解決</li>
+                                    <li>應用運算思維評估解題方法的優劣</li>
+                                    <li>訓練大腦邏輯思考與問題處理</li>
+                                </ul>
+                            </td>
+                            <td>3hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Python程式應用</td>
+                            <td>
+                                <ul>
+                                    <li>Python程式安裝</li>
+                                    <li>常見資料結構的概念及應用
+                                    <li>程式內的函數應用</li>
+                                    <li>學習Python如何撰寫無窮迴圈及條件處理</li>
+                                </ul>
+                            </td>
+                            <td>12hrs</td>
+                        </tr>
+                        <tr>
+                            <td>數學統計啟發</td>
+                            <td>
+                                <ul>
+                                    <li>簡易統計</li>
+                                    <li>概率分析</li>
+                                    <li>計算機科學</li>
+                                    <li>變數運算</li>
+                                </ul>
+                            </td>
+                            <td>9hrs</td>
+                        </tr>
+                        <tr>
+                            <td>數學和數據分析</td>
+                            <td>
+                                <ul>
+                                    <li>電腦運算原理與數值分析</li>
+                                    <li>程式運算邏輯</li>
+                                </ul>
+                            </td>
+                            <td>6hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Python實作開發</td>
+                            <td>
+                                <ul>
+                                    <li>機器學習模型測試</li>
+                                    <li>圖像處理入門</li>
+                                    <li>機器人簡介</li>
+                                </ul>
+                            </td>
+                            <td>6hrs</td>
+                        </tr>
+                        <tr>
+                            <td>專題製作</td>
+                            <td>
+                                <ul>
+                                    <li>AI人臉辨識實作</li>
+                                    <li>AI影像辨識實作</li>
+                                </ul>
+                            </td>
+                            <td>9hrs</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
+            </div>
+
+            <div class="ai-courses-mobile">
+                <div class="table-condensed" id="faceRecognition">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="">APCS能力檢定</th>
+                        </tr>
+                        <tr>
+                            <th class="ai-course-intro">課程介紹&nbsp;<div class="triangle-down"></div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>數學概論引導</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>數學觀念指引</li>
+                                    <li>高一上_第二章多項式函數</li>
+                                    <li>高一下_數列與級數</li>
+                                    <li>高二下_矩陣</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>程式基礎概論</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>準備 Java 開發環境與 Java Doc；開發、執行 Java 程式</li>
+                                    <li>建立類別、方法、變數、名稱規則、註解</li>
+                                    <li>NetBeans IDE 的安裝與使用說明</li>
+                                    <li>運算子、資料傳遞（途徑）與轉型（基本型別）</li>
+                                    <li>參考型別與資料傳遞方式</li>
+                                    <li>分支流程控制及邏輯運算子</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JAVA基礎程式</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>新手入門-程式語言基本觀念、程式開發工具安裝</li>
+                                    <li>資料型態、運算元、位元運算(bitwise operation)</li>
+                                    <li>程式流程控制(if...else, for, while…)</li>
+                                    <li>函式與遞迴函式、陣列</li>
+                                    <li>變數範圍、字元與字串處理</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>APCS檢測認證</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Advanced Nest for while Loop_進階迴圈程式</li>
+                                    <li>Collection and Generics_物件集合泛型</li>
+                                    <li>Recursion_遞迴程式設計</li>
+                                    <li>Stack Queue Linked List _堆疊佇列資料結構</li>
+                                    <li>Tree_樹狀圖</li>
+                                    <li>Sorting Searching_排序搜尋</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>數學引導啟發</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>解題前的數學引導提醒</li>
+                                    <li>高一上_第二章多項式函數</li>
+                                    <li>高一下_數列與級數</li>
+                                    <li>高二下_矩陣</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>考前衝刺計畫</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>程式設計實作</li>
+                                    <li>Programming Concepts</li>
+                                    <li>Data types, constant, variable, Global, Local</li>
+                                    <li>APCS 觀念題精選詳解</li>
+                                    <li>APCS 實作體精選詳解</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
+                <div class="table-condensed" id="videoRecognition">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="">青少年Python</th>
+                        </tr>
+                        <tr>
+                            <th class="ai-course-intro">課程介紹&nbsp;<div class="triangle-down"></div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>程式邏輯思維概念</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>運算思維與問題解決</li>
+                                    <li>應用運算思維評估解題方法的優劣</li>
+                                    <li>訓練大腦邏輯思考與問題處理</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Python程式應用</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Python程式安裝</li>
+                                    <li>常見資料結構的概念及應用
+                                    <li>程式內的函數應用</li>
+                                    <li>學習Python如何撰寫無窮迴圈及條件處理</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>數學統計啟發</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>簡易統計</li>
+                                    <li>概率分析</li>
+                                    <li>計算機科學</li>
+                                    <li>變數運算</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>數學和數據分析</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>電腦運算原理與數值分析</li>
+                                    <li>程式運算邏輯</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Python實作開發</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>機器學習模型測試</li>
+                                    <li>圖像處理入門</li>
+                                    <li>機器人簡介</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>專題製作</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>AI人臉辨識實作</li>
+                                    <li>AI影像辨識實作</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="prev"></div>
+    <div class="next"></div>
+</section>
+
+<section class="ai-course ai-course--bgGray">
+    <div class="container">
+        <div class="row">
+            <div class="ai-courses--solo">
+                <div class="table-condensed">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th colspan="2" class="">程式設計系列進階課程</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>資料科學應用</td>
+                            <td>
+                                <ul>
+                                    <li>統計分析基礎</li>
+                                    <li>資料整理與模擬探索</li>
+                                    <li>資料篩選和圖表顯示</li>
+                                    <li>資料重塑與清理</li>
+                                    <li>探索資料數據</li>
+                                    <li>資料建模</li>
+                                    <li>評估資料數據</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>聊天機器人<br>Chatbot</td>
+                            <td>
+                                <ul>
+                                    <li>聊天機器人架構解析及運作原理</li>
+                                    <li>基礎環境建置與應用</li>
+                                    <li>解與使用語意理解服務</li>
+                                    <li>整合串接多媒體平台</li>
+                                    <li>實作你的聊天機器人</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java OCP JP<br>程式設計認證班</td>
+                            <td>
+                                <ul>
+                                    <li>Java 平台開發與介紹，基礎語法使用</li>
+                                    <li>變數與物件條件式語法運用</li>
+                                    <li>Java 資料結構式處理</li>
+                                    <li>建置多國語系的應用程式</li>
+                                    <li>認證考照輔導</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Android<br>應用程式開發</td>
+                            <td>
+                                <ul>
+                                    <li>Android應用程式開發工具與架構介紹</li>
+                                    <li>Android Material Design裝置整合設計</li>
+                                    <li>Android手機實用功能開發</li>
+                                    <li>Android GPS與Google Map導航應用技術</li>
+                                    <li>Android專題製作</li>
+                                    <li>Android作品上傳至Play商店</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
+            </div>
+            <div class="ai-courses-mobile">
+                <div class="table-condensed">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th class="">程式設計系列進階課程</th>
+                        </tr>
+                        <tr>
+                            <th class="ai-course-intro">課程介紹&nbsp;<div class="triangle-down"></div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>資料科學應用</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>統計分析基礎</li>
+                                    <li>資料整理與模擬探索</li>
+                                    <li>資料篩選和圖表顯示</li>
+                                    <li>資料重塑與清理</li>
+                                    <li>探索資料數據</li>
+                                    <li>資料建模</li>
+                                    <li>評估資料數據</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>聊天機器人<br>Chatbot</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>聊天機器人架構解析及運作原理</li>
+                                    <li>基礎環境建置與應用</li>
+                                    <li>解與使用語意理解服務</li>
+                                    <li>整合串接多媒體平台</li>
+                                    <li>實作你的聊天機器人</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Java OCP JP<br>程式設計認證班</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Java 平台開發與介紹，基礎語法使用</li>
+                                    <li>變數與物件條件式語法運用</li>
+                                    <li>Java 資料結構式處理</li>
+                                    <li>建置多國語系的應用程式</li>
+                                    <li>認證考照輔導</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Android<br>應用程式開發</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Android應用程式開發工具與架構介紹</li>
+                                    <li>Android Material Design裝置整合設計</li>
+                                    <li>Android手機實用功能開發</li>
+                                    <li>Android GPS與Google Map導航應用技術</li>
+                                    <li>Android專題製作</li>
+                                    <li>Android作品上傳至Play商店</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <a class="btn-join" href='#join'>索取課程資料</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="event-registration" id="event">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title">
+                APCS檢測題型
+                <div class="bar"></div>
+            </h2>
+            <div class="aiTalentTraining">
+                <div class="aiTalentTraining__card wow bounceInLeft">
+                    <img src="build/images/icon04.svg" alt="" class="img-responsive">
+                    <div class="aiTalentTraining__content">
+                        <div>程式設計觀念</div>
+                        <h2>/ 單選題</h2>
+                        <ul>
+                            <li>共50題。</li>
+                            <li>以運算思維、問題解決與程式設計觀念測試為主。</li>
+                            <li>測試包含 code tracing, code completion, code debugging等題型。</li>
+                            <li>題目若需提供程式片段，則以 C 語言 subset 命題。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aiTalentTraining__card wow bounceInRight">
+                    <img src="build/images/icon05.svg" alt="" class="img-responsive">
+                    <div class="aiTalentTraining__content">
+                        <div>程式設計實作</div>
+                        <h2>/ 非選擇題</h2>
+                        <ul>
+                            <li>4個題組，故10-20組測試資料。</li>
+                            <li>以撰寫完整程式或副程式為主。</li>
+                            <li>可自行選擇以 C, C++, Java, Python 撰寫程式。/li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <p style="color: white;line-height: 1.5;" class="text-center">※ TIPS：依2016年測驗成績，程式實作會寫一題以上即可排名前11%，一舉超越9成對手。</p>
+        </div>
+    </div>
+</section>
+
+<section class="ai-course ai-course--table">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                採計APCS成績大學校系
+                <div class="bar"></div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                <table class="table1 table table-hover table-bordered">
+                    <thead>
+                    <tr class="gray">
+                        <th>學校名稱</th>
+                        <th>學系/組</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>國立交通大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+
+                    <tr>
+                        <td>國立政治大學</td>
+                        <td>資訊科學系</td>
+                    </tr>
+                    <tr>
+                        <td>國立師範大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: middle">國立中央大學</td>
+                        <td>
+                            <p>資訊工程學系</p>
+                            <p>資訊管理學系</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>國立中興大學</td>
+                        <td>資訊科學與工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>國立台北大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>國立台北教育大學</td>
+                        <td>數學暨資訊教育學系資訊組</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>國立臺灣海洋大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+
+                    <tr>
+                        <td>國立臺東大學</td>
+                        <td>資訊管理學系</td>
+                    </tr>
+                    <tr>
+                        <td>國立高雄大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>元智大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>淡江大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>長庚大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>長榮大學</td>
+                        <td>資訊暨設計學院學士班</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-12 col-md-6 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                <table class="table1 table table-hover table-bordered">
+                    <thead>
+                    <tr class="gray">
+                        <th>學校名稱</th>
+                        <th>學系/組</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr>
+                        <td style="vertical-align: middle">國立成功大學</td>
+                        <td><p>資訊工程學系</p><p>工業與資訊管理學系</p></td>
+                    </tr>
+
+                    <tr>
+                        <td style="vertical-align: middle">國立暨南國際大學</td>
+                        <td><p>資訊工程學系</p> <p>資訊管理學系</p></td>
+                    </tr>
+
+                    <tr>
+                        <td style="vertical-align: middle">國立聯合大學</td>
+                        <td><p>資訊管理學系</p> <p>資訊工程學系</p></td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: middle">東海大學</td>
+                        <td><p>資訊工程學系資電工程組</p><p>資訊工程學系軟體工程組</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>實踐大學</td>
+                        <td>資訊科技與管理學系(臺北校區)</td>
+                    </tr>
+                    <tr>
+                        <td>輔仁大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td>銘傳大學</td>
+                        <td>資訊工程學系(桃園校區)</td>
+                    </tr>
+                    <tr>
+                        <td>慈濟大學</td>
+                        <td>醫學資訊學系</td>
+                    </tr>
+                    <tr>
+                        <td>義守大學</td>
+                        <td>資訊工程學系</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align: middle">靜宜大學</td>
+                        <td><p>資訊傳播工程學系</p>
+                            <p>資訊工程學系</p>
+                            <p>資訊管理學系</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="text-align: center;line-height: 1.5;">※ 更新至2018.09.07，最新校系成績採計資料可至<a
+                    href="https://apcs.csie.ntnu.edu.tw/index.php/apcs-introduction/gradeschool"
+                    target="_blank">APCS</a>官網查詢</p>
+            <a class="btn-join" href='#join'>索取課程資料</a>
+        </div>
+    </div>
+</section>
+
+<section class="join-ai-course" id="join">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                索取培訓資料<br>
+                <span class="share">再送線上電腦課程</span>
+            </div>
+            <!--<div class="d-flex">-->
+            <div class="col-md-7">
+                <div id="FORM">
+
+                    <div id="NAME">
+                        <input type="text" name="" class="A" data-watermark="姓 名" id="name" placeholder="姓 名" />
+                    </div>
+                    <div id="PHONE">
+                        <input type="tel" name="" class="A" data-watermark="行動電話" id="mobile" placeholder="行動電話" />
+                    </div>
+                    <div id="EMAIL" class="PC">
+                        <input type="text" name="ea" class="A" data-watermark="E-mail" id="email" placeholder="E-mail" />
+                    </div>
+                    <div id="CITY">
+                        <select id="ddl_city_no" class="A" disabled="disabled"></select>
+                    </div>
+                    <div id="SCHOOL">
+                        <select id="ddl_area_no" class="A" disabled="disabled"></select>
+                    </div>
+
+                    <!--<div class="clearfix"></div>-->
+                    <div id="READ">
+                        <label><input type="checkbox" class="searchtext2" name="per_chk" /></label>
+                        <span>我已詳細閱讀並接受<a onclick="window.open('http://www.pcschool.com.tw/member/Message.html','person',config='height=640,width=830');return false;" href="#" style="color: #404040;">個資保護聲明</a></span>
+                    </div>
+                    <div id="BUT">
+                        <p class="B" id="sBut" style="cursor:pointer;">索取課程資料</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix display-mobile"></div>
+            <div class="col-md-5">
+                <img src="https://www.pcschool.com.tw/activity/107/10701_salarySaver/build/images/gift.svg" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="course-video" id="video">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                課程應用影片
+                <div class="bar"></div>
+            </div>
+            <div class="videos">
+                <div class="video">
+                    <a href="https://youtu.be/FfpRfX_wERk?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_01.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>Great River x Microsoft
+                            <br>自動化藥物管理系統
+                        </h2>
+                        <p>Great River 醫療中心運用 Microsoft 的技術和裝置，打造自動化的端對端藥物管理系統，大幅降低病患的等待時間、輸入資料的錯誤機率、藥物成本，讓病患更迅速地復原。
+                        </p>
+                        <a href="https://youtu.be/FfpRfX_wERk?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/L1zmHByWgZw?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_02.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>Grundfos x Microsoft
+                            <br>智慧泵浦改善漏水
+                        </h2>
+                        <p>全球有超過450億公升的水，因為水管漏水或破裂而流失，這相當2億人的每日用水。Grundfos 的智慧泵浦，透過Azure IoT 收集來自智慧感測器的據數，並利用Cortana Intelligence 的大數據分析，即時預測應對漏水問題，再搭配氣候數據，預估暴雨的發生地，提早策略性儲水。
+                            Grundfos 智慧泵浦在永續的水資源中扮演關鍵角色。
+                        </p>
+                        <a href="https://youtu.be/L1zmHByWgZw?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/IfvGoLFpW7o?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_03.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>HP x Microsoft
+                            <br>AI優化線上客服成果
+                        </h2>
+                        <p>平均每秒銷售一台印表機，每年銷售超過 5,000 萬台 PC，HP 每年需接觸超過 6 億個客戶，同為科技公司的 HP 很快地就發現，微軟的人工智慧可以協助他們處理客戶爆炸性的需求，AI 讓客戶解決問題的比例從 20-30%，提升至 70-80%，而後台儀表板更能提供關鍵指標，協助持續優化客服成果！</p>
+                        <a href="https://youtu.be/IfvGoLFpW7o?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/ocV40YzjwG0?v=ocV40YzjwG0?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_04.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>Prism Skylabs x Microsoft
+                            <br>認知服務讀懂影像數據
+                        </h2>
+                        <p>Microsoft Azure AI 技術 – 認知服務介紹 : https://azure.microsoft.com/zh-tw/ser... 不只看得懂數據，人工智慧也會分析影像！不論是城市中的監視器或是人手一支的行動電話，每天都有數量驚人的影像產生。
+                            而 Prism Skylabs 看準了藏在攝影鏡頭中的資訊，透過微軟認知服務的計算機視覺 API，幫助組織機構搜索閉路電視和安防攝像頭所拍攝的內容，讓企業一手掌握特定的事件、物品和人員！
+                        </p>
+                        <a href="https://youtu.be/ocV40YzjwG0?v=ocV40YzjwG0?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/0kP_nIzbCTk?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_05.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>Uber x Microsoft
+                            <br>人臉辨識提高乘車安全
+                        </h2>
+                        <p>Uber 正在使用 Microsoft Cognitive Services <br>提供即時身分識別確認。<br>
+                            Uber 司機必須自拍自己的照片，並通過身分驗證才能載客。
+                        </p>
+                        <a href="https://youtu.be/0kP_nIzbCTk?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/dcXmGUPl_00?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_06.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>梅西百貨 x Microsoft
+                            <br>AI 客服上線了
+                        </h2>
+                        <p>有能力服務客戶的人，才能留下客戶，於是梅西百貨決心用人工智慧來擴增服務能量，消費者可以透過任何管道向梅西詢問，客服機器人會人性化的回答問題，帶領消費者找到答案，不必再翻找 FAQ，即使真人客服員，也可以藉由客服機器人的協助，快速上線工作，減少訓練的成本，在影片中您可以看到這是個有溫度的服務，它不僅滑潤了客戶關係，也為企業帶來更多的利潤！
+                        </p>
+                        <a href="https://youtu.be/dcXmGUPl_00?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/c0A3PPtyfaE?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">
+                        <div class="video-img" style="background-image: url(https://www.pcschool.com.tw/activity/107/1070212_ai/build/images/video_07.jpg)">
+                            <i class="fab fa-youtube fa-3x"></i>
+                        </div>
+                    </a>
+                    <div class="video-content">
+                        <h2>Pepper x Microsoft
+                            <br>實現未來購物新體驗
+                        </h2>
+                        <p>日本電信大廠軟體銀行 (SoftBank) 的人形機器人 「Pepper」與微軟的雲端平台「Azure」利用線上大數據分析追蹤銷售品項，協助零售商更靈活調節庫存管理，同時記錄顧客的特性與需求，並搭載情感認知，客製化推薦顧客所需，創造零售購物新體驗。
+                            另外，Pepper 同時具備翻譯功能，可以服務更多來自不同地區旅客。
+                        </p>
+                        <a href="https://youtu.be/c0A3PPtyfaE?autoplay=1" class="venobox" data-type="youtube" data-gall="gall-video">看影片</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="prev-v"></div>
+    <div class="next-v"></div>
+</section>
+
+
+<script type="application/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 <script type="application/javascript" src="build/js/templates.js"></script>
+<script type="application/javascript" src="build/js/venobox.min.js"></script>
 <script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
+<script type="text/javascript" src="/wGuest/js/m_pcschool2018.js"></script>
 <script type="application/javascript" src="build/js/scripts.min.js"></script>
 
+
+<!--=========================== FOOTER ===========================-->
+<div class="FOOTER">
+    <iframe class="respIframe" style="width:100%;height:100%;border:0;padding:0;margin:0;" onload="" src="/activity/footer-2016/Default.aspx" frameborder="0" allowfullscreen></iframe>
+</div>
+<script>
+
+    $(function () {
+        function resizeIframe() {
+            $('iframe.respIframe').each(function () {
+                $(this).height($(this).contents().find('body').height());
+            });
+        }
+        $(window).bind("load", resizeIframe);
+        $(window).bind("resize", resizeIframe);
+        $(window).bind("orientationchange", resizeIframe);
+        resizeIframe();
+    });
+</script>
 </body>
 </html>

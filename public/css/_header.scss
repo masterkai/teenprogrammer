@@ -1,14 +1,70 @@
 header {
-  .KV {
-    @include breakpoint($ipad) {
-      display: none;
+  background-image: url(https://www.pcschool.com.tw/activity/108/teencodingbootcamp/build/images/KV_1920x768.gif);
+  background-position: 50% 10%;
+  background-size: cover;
+  @include breakpoint($large){
+    background-image: url(https://www.pcschool.com.tw/activity/108/teencodingbootcamp/build/images/KV_768x960.gif);
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
-    &__m {
-      display: none;
-      @include breakpoint($ipad){
+  .mainCopy {
+    margin-bottom: 60px;
+    .courseBtn {
+      max-width: 600px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px 20px;
+      @include breakpoint(max-width 450px) {
+        margin: 0 20px 10px;
+      }
+      @include breakpoint(max-width 899px) {
+        justify-content: stretch;
+      }
+
+      .btn-go {
+        &__mobile {
+          display: none;
+          flex-grow: 1;
+          //border: 3px solid #fff;
+          width: 100%;
+          font-weight: 500;
+          border-radius: 50px;
+          transition: all .2s ease-in-out;
+          color: #404040;
+          background-color: yellow;
+          &:hover {
+            background-color: opacify(#fff, 1);
+            color: #000;
+          }
+
+          @include breakpoint($ipad) {
+            display: block;
+          }
+        }
+
+        margin: 6px;
+        font-size: 1.1rem;
+        flex-grow: 1;
+        //border: 3px solid #fff;
         display: block;
+        width: 100%;
+        font-weight: 500;
+        border-radius: 50px;
+        transition: all .2s ease-in-out;
+        color: #404040;
+        background-color: yellow;
+        @include breakpoint($ipad) {
+          display: none;
+        }
 
+        &:hover {
+          background-color: opacify(#fff, 1);
+          color: #000;
+        }
       }
     }
   }

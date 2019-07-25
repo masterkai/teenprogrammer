@@ -1,0 +1,46 @@
+.section-title {
+  text-align: center;
+  width: auto;
+  font-size: 2.375rem;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  @include breakpoint($ipad){
+    line-height: 1.5;
+    font-size: 2rem;
+    margin: 20px auto;
+  }
+  @include breakpoint(max-width 420px){
+    line-height: 1.35;
+    font-size: 1.735rem;
+    margin: 20px auto;
+  }
+
+  .share {
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: $lightBlue;
+    @include breakpoint($ipad){
+      font-size: 6vw;
+    }
+    @include breakpoint(max-width 420px){
+      font-size: 5vw;
+    }
+  }
+
+  .bar {
+    padding-top: 20px;
+    border-bottom: solid 8px $msBlue;
+    max-width: 150px;
+    margin: 0 auto;
+    @include breakpoint($ipad){
+      padding-top: 20px;
+    }
+    @include breakpoint(max-width 420px){
+      padding-top: 10px;
+      max-width: 120px;
+    }
+  }
+}

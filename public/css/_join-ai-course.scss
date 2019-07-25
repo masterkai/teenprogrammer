@@ -1,0 +1,185 @@
+.join-ai-course {
+  background-color: $formBg;
+  padding-bottom: 50px;
+  .display-mobile {
+    display: none;
+    @include breakpoint(max-width 991px){
+      display: block;
+    }
+  }
+
+
+  @include breakpoint(max-width 600px){
+    padding-bottom: 10px;
+  }
+  img {
+    padding: 10px 0 30px;
+  }
+  .section-title {
+    line-height: 2;
+    @include breakpoint(max-width 650px){
+      line-height: 1.8;
+    }
+    @include breakpoint(max-width 480px){
+      line-height: 1.5;
+    }
+  }
+  h2 {
+    margin: 20px 0;
+    height: 60px;
+    border: 1px solid $darkGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 1.8rem;
+      color: $darkGray;
+      &:hover, &:visited, &:active, &:focus {
+        color: #000;
+        text-decoration: none;
+      }
+      .fa-hand-point-right {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/*------------form------------*/
+#FORM{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+  margin-top: 20px;
+  @include breakpoint($ai-course-table-change){
+    margin-top: 0;
+  }
+}
+
+#FORM #NAME{
+  width:48%;
+  height:auto;
+  float:left;
+  margin:0 1%;
+  @include breakpoint(0 550px){
+    width: 98%;
+  }
+}
+
+#FORM #PHONE{
+  width:48%;
+  height:auto;
+  float:left;
+  margin:0 1%;
+  @include breakpoint(0 550px){
+    width: 98%;
+  }
+}
+
+#FORM #EMAIL, #FORM #SELECT, #FORM #COURSE{
+  width:98%;
+  height:auto;
+  margin:0 1%;
+}
+
+#FORM #Dept{
+  margin:0px 0px 20px 0px;
+  width:100%;
+  height:35px;
+}
+
+#FORM #CITY {
+  width:48%;
+  height:auto;
+  float:left;
+  margin:0 1%;
+}
+
+#ddl_city_no{
+  width:100%;
+  text-align:center;
+  //height:35px;
+
+}
+#FORM #SCHOOL{
+  width:48%;
+  height:auto;
+  float:left;
+  margin:0 1%;
+}
+
+#ddl_area_no {
+  width:100%;
+  text-align:center;
+  //height:35px;
+}
+
+#READ{
+  width:100%;
+  font-size:16px;
+  display:block;
+  float:left;
+  margin-top:2%;
+  margin-right:10px;
+  color: #404040;
+  line-height:20px;
+}
+
+#READ .searchtext2{
+  min-width:20px;
+  min-height:20px;
+  border: 1px solid #1971db;
+  background-color:#FFF;
+  vertical-align: text-bottom;
+}
+
+#FORM #BUT {
+  float:left;
+  width:100%;
+  height:auto;
+  margin-top:2%;
+  margin-bottom: 20px;
+}
+
+.A{
+  color:$darkGray;
+  background-color:#fff;
+  border: none;
+  width:100%;
+  height:55px;
+  line-height:35px;
+  margin-top:12px;
+  font-size:100%;
+  text-align:left;
+  padding-left:20px;
+  overflow:hidden;
+  font-family:Arial, Helvetica,"Microsoft YaHei", sans-serif, Microsoft JhengHei;
+}
+
+
+.B{
+  width:100%;
+  height:50px;
+  display:block;
+  margin:0 auto;
+  *zoom: 1;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing:2;
+  color: #333;
+  text-decoration:none;
+  background-color: #ffc61b;
+  cursor: pointer;
+  border-radius: 2px;
+  border-bottom: 10px solid #ffa61b;
+  -webkit-box-shadow:0px 3px 4px rgba(0,0,0,0.10);
+  box-shadow:0px 3px 4px rgba(0,0,0,0.10);
+}
+
+.B:hover{
+  background-color: #ffa61b;
+  border-bottom: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

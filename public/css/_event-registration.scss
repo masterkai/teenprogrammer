@@ -1,0 +1,186 @@
+.event-registration {
+  background-color: $secondBlue;
+  padding-bottom: 50px;
+  @include breakpoint(max-width 600px){
+    padding-bottom: 10px;
+  }
+  .section-title {
+    color: #fff;
+  }
+  .bar {
+    border-bottom: solid 8px $lightBlue;
+  }
+
+  .aiTalentTraining {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    @include breakpoint($ai-course-table-change){
+      flex-direction: column;
+    }
+    &__card {
+      position: relative;
+      border-radius: 5px;
+      background-color: #fff;
+      margin: 10px 10px 60px 10px;
+      box-shadow: 1px 1px 4px rgba(0,0,0,.15);
+      flex: 0 1 50%;
+      display: flex;
+      flex-direction: column;
+      img {
+        position: absolute;
+        left: 50%;
+        top: -20%;
+        transform: translateX(-50%);
+        max-width: 160px;
+      }
+      .aiTalentTraining__content {
+        padding: 20px 30px;
+
+        div {
+          text-align: center;
+          letter-spacing: 1.2px;
+          font-weight: 600;
+          font-size: 1.435rem;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          max-width: 40%;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 90px;
+          border-bottom: 5px solid $secondBlue;
+          @include breakpoint($ai-course-table-change){
+            max-width: 60%;
+          }
+        }
+        p {
+          line-height: 1.85;
+          margin-bottom: 25px;
+          @include breakpoint($ai-course-table-change){
+            line-height: 1.25;
+          }
+        }
+        h2 {
+          font-weight: bolder;
+          margin-bottom: 20px;
+          font-size: 1.25rem;
+        }
+        ul {
+          list-style: disc;
+          padding-left: 20px;
+          line-height: 2;
+          @include breakpoint($ai-course-table-change){
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+  }
+  .table-condensed {
+    display: block;
+    @include breakpoint($ai-course-table-change){
+      display: none;
+    }
+    .table {
+      border: 0;
+      thead {
+        tr {
+          color: #fff;
+          th {
+            text-align: center;
+            &:first-child {
+              border-top-left-radius: 5px;
+            }
+            &:last-child {
+              border-top-right-radius: 5px;
+            }
+          }
+          &:nth-child(odd) {
+            background-color: $firstBlue;
+            font-size: 1.425rem;
+            font-weight: 700;
+          }
+          &:nth-child(even) {
+            background-color: $secondBlue;
+            font-size: 1.375rem;
+            font-weight: 500;
+          }
+        }
+      }
+      tbody {
+        tr {
+          background-color: #fff;
+          &:nth-child(even){
+            background-color: #D3EBFF;
+          }
+          td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.35rem;
+          }
+        }
+      }
+    }
+  }
+  .table-condensed-mobile {
+    margin: 30px;
+    display: none;
+    .btn-join {
+      margin: 15px auto 30px;
+    }
+    @include breakpoint($ai-course-table-change){
+      display: block;
+    }
+    .table {
+      border: 0;
+      thead {
+        tr {
+          color: #fff;
+          th {
+            text-align: center;
+            &:first-child {
+              border-top-left-radius: 5px;
+            }
+            &:last-child {
+              border-top-right-radius: 5px;
+            }
+          }
+          &:nth-child(odd) {
+            background-color: $firstBlue;
+            font-size: 1.425rem;
+            font-weight: 700;
+          }
+          &:nth-child(even) {
+            background-color: $secondBlue;
+            font-size: 1.375rem;
+            font-weight: 500;
+          }
+        }
+      }
+      tbody {
+        tr {
+          background-color: #fff;
+          &:nth-child(odd){
+            background-color: #D3EBFF;
+          }
+          td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.35rem;
+          }
+        }
+      }
+    }
+  }
+  &-detail {
+    font-size: 1.15rem;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 1.75;
+    padding: 20px 70px;
+    @include breakpoint($ai-course-table-change){
+      padding: 20px;
+      margin: 30px;
+    }
+  }
+}

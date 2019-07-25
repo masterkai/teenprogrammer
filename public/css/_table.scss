@@ -1,0 +1,43 @@
+.table1-inverse td, .table1-inverse th, .table1-inverse thead th {
+  border-color: #fff;
+}
+
+thead tr.gray{
+  background-color: #2c6dd8;
+}
+
+tr.gray>th{
+  text-align: center;
+  color: #fff;
+}
+
+.table1>tbody>tr:nth-of-type(odd){
+  background-color: #fff;
+}
+
+.table1>tbody>tr:nth-of-type(even){
+  background-color: #e2edff;
+}
+
+.table1>tbody>tr:hover{
+  background-color: #c6dafc;
+}
+
+.table1>tbody>tr>td:nth-of-type(odd){
+  width: 35%;
+  color: #2c6dd8;
+  font-weight: bold;
+}
+
+.table1>tbody>tr>td:nth-of-type(even){
+  width: 65%;
+}
+
+.table1>tbody>tr>td{
+  font-size: 16px;
+  padding-left: 30px;
+}
+
+.table1>tbody>tr>td p{
+  margin-bottom: 6px;
+}

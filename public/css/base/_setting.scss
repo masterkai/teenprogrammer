@@ -3,3 +3,40 @@ $ipad-Pro: max-width 1200px;
 $iphone: max-width 500px;
 $medium: max-width 991px;
 $large: max-width 1024px;
+$ai-course-table-change: max-width 760px;
+
+
+
+$msBlue: #0096FF;
+$btnYellow: #FFB700;
+$btnShadow: #F8B62D;
+$firstBlue: #0E67B7;
+$secondBlue: #0E8CD3;
+$lightBlue: #14CFF6;
+$formBg: #D1DADF;
+$darkGray: #647278;
+$bodyGray:#ededed;
+
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  color: lighten($secondBlue, 30%);
+}
+
+.slick-track {
+  display: flex;
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: "Microsoft YaHei","Noto Sans TC", sans-serif;
+}
